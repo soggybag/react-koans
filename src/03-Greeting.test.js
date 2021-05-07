@@ -18,6 +18,8 @@ afterEach(() => {
   container = null;
 });
 
+
+
 it("renders with or with props", () => {
   act(() => {
     render(<Greeting name="friend" />, container);
@@ -32,13 +34,4 @@ it("renders an h1", () => {
   
   expect(container.querySelector('h1')).not.toBe(null)
 
-  // act(() => {
-  //   render(<Hello name="Jenny" />, container);
-  // });
-  // expect(container.textContent).toBe("Hello, Jenny!");
-
-  // act(() => {
-  //   render(<Hello name="Margaret" />, container);
-  // });
-  // expect(container.textContent).toBe("Hello, Margaret!");
 });

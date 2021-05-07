@@ -1,7 +1,7 @@
 
 import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
-import HasStyle from "./07-ClassNames";
+import PageHeader from "./09-RenderComponents";
 
 let container = null;
 beforeEach(() => {
@@ -18,13 +18,13 @@ afterEach(() => {
 });
 
 
-it("renders a div with class name: HasStyle", () => {
+it("renders Hello Component in the PageHeader Component", () => {
   act(() => {
-    render(<HasStyle />, container);
+    render(<PageHeader />, container);
   });
 
-  const el = container.querySelector('.HasStyle')
+  const el = container.querySelector('div')
+  expect(el.textContent).toBe('Hello World')
 
-  expect(el.tagName).toBe('DIV')
 
 });

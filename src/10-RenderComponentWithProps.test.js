@@ -1,7 +1,7 @@
 
 import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
-import HasStyle from "./07-ClassNames";
+import PageHeader from "./10-RenderComponentWithProps";
 
 let container = null;
 beforeEach(() => {
@@ -18,13 +18,20 @@ afterEach(() => {
 });
 
 
-it("renders a div with class name: HasStyle", () => {
+it("renders three greetings", () => {
   act(() => {
-    render(<HasStyle />, container);
+    render(<PageHeader />, container);
   });
 
-  const el = container.querySelector('.HasStyle')
+  const threeH1 = container.querySelectorAll('div > h1')
+  expect(threeH1.length).toBe(3)
+});
 
-  expect(el.tagName).toBe('DIV')
+it("renders the names Amy, Bob, and Cat", () => {
+  act(() => {
+    render(<PageHeader />, container);
+  });
 
+  const threeH1 = container.querySelectorAll('div > h1')
+  expect(threeH1.length).toBe(3)
 });

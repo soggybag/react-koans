@@ -51,19 +51,3 @@ it("renders p with hey, stranger", () => {
   expect(container.querySelector('p').innerHTML).toBe('Hey, stranger')
 });
 
-
-// it("renders an p", () => {
-//   act(() => {
-//     render(<PersonalGreeting />, container);
-//   });
-
-//   expect(container.querySelector('p')).not.toBe(null)
-// });
-
-// it("renders p with Welcome to React Koans!", () => {
-//   act(() => {
-//     render(<PersonalGreeting />, container);
-//   });
-
-//   expect(container.querySelector('p').innerHTML).toBe('Welcome to React Koans')
-// });
