@@ -4,7 +4,7 @@ an h1 and a p below it.
 The h1 should say: Hello World
 The p should say: Welcome to React Koans
 */
-function Hello() {
+function Headline() {
 	return (
 		<div>
 			<h1>Hello World</h1>
@@ -13,4 +13,4 @@ function Hello() {
 	)
 }
 
-export default Hello
+export default Headline
