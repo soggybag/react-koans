@@ -33,5 +33,7 @@ it("renders the names Amy, Bob, and Cat", () => {
   });
 
   const threeH1 = container.querySelectorAll('div > h1')
-  expect(threeH1.length).toBe(3)
+  expect(threeH1[0].textContent).toBe('Hello Amy')
+  expect(threeH1[1].textContent).toBe('Hello Bob')
+  expect(threeH1[2].textContent).toBe('Hello Cat')
 });
