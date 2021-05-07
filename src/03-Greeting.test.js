@@ -2,7 +2,7 @@
 import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
 
-import BigHello from "./02-Big-Hello";
+import Greeting from "./03-Greeting";
 
 let container = null;
 beforeEach(() => {
@@ -18,18 +18,27 @@ afterEach(() => {
   container = null;
 });
 
-it("renders with Hello World", () => {
+it("renders with or with props", () => {
   act(() => {
-    render(<BigHello />, container);
+    render(<Greeting name="friend" />, container);
   });
-  expect(container.textContent).toBe("Hello World");
+  expect(container.textContent).toBe("Hello friend");
 })
 
 it("renders an h1", () => {
   act(() => {
-    render(<BigHello />, container);
+    render(<Greeting />, container);
   });
   
   expect(container.querySelector('h1')).not.toBe(null)
 
+  // act(() => {
+  //   render(<Hello name="Jenny" />, container);
+  // });
+  // expect(container.textContent).toBe("Hello, Jenny!");
+
+  // act(() => {
+  //   render(<Hello name="Margaret" />, container);
+  // });
+  // expect(container.textContent).toBe("Hello, Margaret!");
 });

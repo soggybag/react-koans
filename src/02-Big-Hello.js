@@ -1,5 +1,5 @@
-function Hello() {
-	return <div>Hello World</div>
+function BigHello() {
+	return <div><h1>Hello World</h1></div>
 }
 
-export default Hello
+export default BigHello
