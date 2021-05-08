@@ -2,7 +2,7 @@
 import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
 
-import TodoList from "./11-TodoItems";
+import TodoList from "./12-TodoList";
 
 let container = null;
 beforeEach(() => {
@@ -20,9 +20,9 @@ afterEach(() => {
 
 
 const todoList = [
-  'Feed the cat',
-  'Shop for onion rings',
-  'Celecrate the day'
+  { id:'ax87', name:'Feed the cat' },
+  { id:'ki98', name:'Shop for onion rings' },
+  { id:'mh21', name:'Celecrate the day' }
 ]
 
 
@@ -52,6 +52,19 @@ it("renders all todo items", () => {
 
   const listItems = container.querySelectorAll('li')
   todoList.forEach((item, i) => {
-    expect(listItems[i].textContent).toBe(item)
+    expect(listItems[i].textContent).toBe(item.name)
   });
+});
+
+it("renders all todo items using the id for key prop", () => {
+  act(() => {
+    render(<TodoList list={todoList} />, container);
+  });
+
+  const todoEl = mount()
+
+  // const listItems = container.querySelectorAll('li')
+  // todoList.forEach((item, i) => {
+  //   expect(listItems[i].dataset.key).toBe(item.id)
+  // });
 });
