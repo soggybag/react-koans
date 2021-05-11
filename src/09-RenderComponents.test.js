@@ -1,6 +1,6 @@
 
 import { render, unmountComponentAtNode } from "react-dom";
-import { act } from "react-dom/test-utils";
+import { act, isCompositeComponent } from "react-dom/test-utils";
 import PageHeader from "./09-RenderComponents";
 
 let container = null;
@@ -26,5 +26,12 @@ it("renders Hello Component in the PageHeader Component", () => {
   const el = container.querySelector('div')
   expect(el.textContent).toBe('Hello World')
 
-
 });
+
+it('renders another component', () => {
+  act(() => {
+    render(<PageHeader />, container);
+  });
+
+  isCompositeComponent(container)
+})

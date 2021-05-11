@@ -45,6 +45,13 @@ it("renders one li for each todo item", () => {
   expect(listItems.length).toBe(todoList.length)
 });
 
+it("renders all todo items using the id for key prop", () => {
+  act(() => {
+    render(<TodoList list={todoList} />, container);
+  });
+  // Need a test for key prop
+});
+
 it("renders all todo items", () => {
   act(() => {
     render(<TodoList list={todoList} />, container);
@@ -56,15 +63,3 @@ it("renders all todo items", () => {
   });
 });
 
-it("renders all todo items using the id for key prop", () => {
-  act(() => {
-    render(<TodoList list={todoList} />, container);
-  });
-
-  const todoEl = mount()
-
-  // const listItems = container.querySelectorAll('li')
-  // todoList.forEach((item, i) => {
-  //   expect(listItems[i].dataset.key).toBe(item.id)
-  // });
-});

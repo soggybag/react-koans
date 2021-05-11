@@ -1,6 +1,8 @@
-import logo from './logo.svg';
+import { useState } from 'react'
 import './App.css';
 import TodoList from './12-TodoList'
+import Menu from './Menu'
+import AllItems from './AllItems'
 
 const todoList = [
   { id:'ax87', name:'Feed the cat' },
@@ -10,9 +12,11 @@ const todoList = [
 
 
 function App() {
+  const [item, setItem] = useState('')
   return (
     <div className="App">
-      <TodoList list={todoList} />
+      <Menu items={Object.keys(AllItems)} onClick={item => setItem(item)}/>
+      {AllItems[item] && AllItems[item]}
     </div>
   );
 }
