@@ -29,7 +29,7 @@ The tests are ordered by difficulty. You can do them in any order.
 ## What is a Koan?
 
 
-## What Skills are covere? 
+## What Skills are covered? 
 
 - JSX 
 	- JSX Syntax
