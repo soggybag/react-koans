@@ -28,6 +28,9 @@ The tests are ordered by difficulty. You can do them in any order.
 
 ## What is a Koan?
 
+  Koans in programming are small lessons on some aspects of a programming language - e.g. syntax, structure, and some common functions and libraries.
+  They are usually simple and structured problems where the programmer is asked to fill in the blanks in code to make test cases pass.
+
 ## What Skills are covered?
 
 - JSX
