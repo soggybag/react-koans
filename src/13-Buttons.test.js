@@ -1,39 +1,23 @@
 
-import { render, unmountComponentAtNode } from "react-dom";
-import { act } from "react-dom/test-utils";
+import { render, screen, fireEvent, cleanup } from "@testing-library/react";
+// import { act } from "react-dom/test-utils";
 import Buttons from "./13-Buttons";
 
 
-
-let container = null;
-beforeEach(() => {
-  // setup a DOM element as a render target
-  container = document.createElement("div");
-  document.body.appendChild(container);
-});
-
-afterEach(() => {
-  // cleanup on exiting
-  unmountComponentAtNode(container);
-  container.remove();
-  container = null;
-});
+afterEach(cleanup);
 
 
 it("renders onClick works", () => {
+  const mockOnClick = jest.fn()
+  render(<Buttons onClick={mockOnClick()}/>)
 
-  const onClick = jest.fn()
+  const btnLog = screen.getByTestId("btn-log");
 
-  act(() => {
-    render(<Buttons onClick={onClick} />, container);
-  });
+  fireEvent.click(btnLog);
 
-  const button = container.querySelector('button')
+  expect(mockOnClick).toHaveBeenCalledTimes(1)
 
-  act(() => {
-    button.dispatchEvent(new MouseEvent('click', { bubbles: true }))
-  })
 
-  expect(onClick).toHaveBeenCalled()
   
 });
+
