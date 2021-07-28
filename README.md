@@ -1,42 +1,41 @@
 # Welcome to React Koans
 
-These are exercises to learn and practice your React skills. 
+These are exercises to learn and practice your React skills.
 
 ## Getting Started
 
-Download, fork, or clone this Repo. 
+Download, fork, or clone this Repo.
 
-Then run: 
+Then run:
 
-```
+```javascript
 yarn
 ```
 
-Start the test runner with: 
+Start the test runner with:
 
-```
+```javascript
 yarn test
 ```
 
 The tests will run in the console and show you the results. The goal is to make each of the tests pass by editing the Components.
 
-All of the Component files are numbered and followed by a name. The tests are labeled `.test.js` with the same name as the component tested. 
+All of the Component files are numbered and followed by a name e.g. `06-PetList.js`. The tests are labeled `.test.js` with the same name as the component tested.
 
-The test runner should rerun the tests each time you save. 
+The test runner should rerun the tests each time you save.
 
-The tests are ordered by difficulty. You can do them in any order. 
+The tests are ordered by difficulty. You can do them in any order.
 
 ## What is a Koan?
 
+## What Skills are covered?
 
-## What Skills are covered? 
-
-- JSX 
-	- JSX Syntax
+- JSX
+  - JSX Syntax
 - Basic Components
-	- Content
-	- Nesting
-	- Functions
+  - Content
+  - Nesting
+  - Functions
 - Props
-	- Passing props
-	- Displaying Props
+  - Passing props
+  - Displaying Props
