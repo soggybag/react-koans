@@ -7,7 +7,7 @@ import AllItems from './AllItems'
 const todoList = [
   { id:'ax87', name:'Feed the cat' },
   { id:'ki98', name:'Shop for onion rings' },
-  { id:'mh21', name:'Celecrate the day' }
+  { id:'mh21', name:'Celebrate the day' }
 ]
 
 

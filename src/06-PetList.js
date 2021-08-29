@@ -10,7 +10,7 @@ You should have at least 5 items!
 The content for each item can be anything you like.
 
 */
-function PetList({ name }) {
+function PetList() {
 	return (
 		<ul>
 			{/* List of items here */}
