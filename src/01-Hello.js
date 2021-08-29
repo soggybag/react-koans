@@ -2,7 +2,7 @@
 This component should render the text: Hello World
 */
 function Hello() {
-	return <div>Hello World</div>
+	return <div></div>
 }
 
 export default Hello

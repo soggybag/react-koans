@@ -19,9 +19,7 @@ import Greeting from './03-Greeting'
 function PageHeader() {
 	return (
 		<header>
-			<Greeting name="Amy" />
-			<Greeting name="Bob" />
-			<Greeting name="Cat" />
+			{/* render three greeting components here */}
 		</header>
 	)
 }

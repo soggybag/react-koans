@@ -4,7 +4,7 @@ name. You should render the text: Hello <name>
 */
 
 function Greeting({ name }) {
-	return <div><h1>Hello {name}</h1></div>
+	return <div></div>
 }
 
 export default Greeting

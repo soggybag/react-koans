@@ -20,7 +20,7 @@ Use the `id` of the todo item as the `key` prop value
 function TodoList({ list }) {
 	return (
 		<ul>
-			{list.map((item) => <li key={item.id}>{item.name}</li>)}
+			{/* Use map to turn the list into li tags use the id as the key */}
 		</ul>
 	)
 }

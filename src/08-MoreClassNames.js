@@ -31,9 +31,9 @@ Be sure to add class names to:
 */
 function HasStyle() {
 	return (
-		<div className="HasStyle">
-			<h1 className="HasStyle--h1">Welcome to react Koans</h1>
-			<p className="HasStyle--p">Study react by observing the world.</p>
+		<div className="Block class name">
+			<h1 className="Element class name">Welcome to react Koans</h1>
+			<p className="element class name">Study react by observing the world.</p>
 		</div>
 	)
 }

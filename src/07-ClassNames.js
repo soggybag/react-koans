@@ -13,7 +13,7 @@ Set className on the div to the name of the component.
 */
 function HasStyle() {
 	return (
-		<div className="HasStyle">
+		<div className="Your class name here">
 			<h1>Welcome to react Koans</h1>
 			<p>Study react by observing the world.</p>
 		</div>

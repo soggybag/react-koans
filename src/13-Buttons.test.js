@@ -10,14 +10,8 @@ afterEach(cleanup);
 it("renders onClick works", () => {
   const mockOnClick = jest.fn()
   render(<Buttons onClick={mockOnClick()}/>)
-
   const btnLog = screen.getByTestId("btn-log");
-
   fireEvent.click(btnLog);
-
   expect(mockOnClick).toHaveBeenCalledTimes(1)
-
-
-  
 });
 

@@ -19,10 +19,11 @@ In a p tag
 */
 function PersonalGreeting({ name }) {
 	if (name) {
-		return <h1>Hello, {name}!</h1>
+		// Greet by name
+		return <p></p>
 	}
-
-	return <p>Hey, stranger</p>
+	// Greet a stranger
+	return <p></p>
 }
 
 export default PersonalGreeting

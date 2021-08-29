@@ -14,7 +14,7 @@ import Hello from './01-Hello'
 function PageHeader() {
 	return (
 		<header>
-			<Hello />
+			{/* render hello component here */}
 		</header>
 	)
 }

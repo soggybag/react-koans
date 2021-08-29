@@ -7,8 +7,7 @@ The p should say: Welcome to React Koans
 function Headline() {
 	return (
 		<div>
-			<h1>Hello World</h1>
-			<p>Welcome to React Koans</p>
+			
 		</div>
 	)
 }

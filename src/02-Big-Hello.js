@@ -4,7 +4,7 @@ text: Hello World
 */
 
 function BigHello() {
-	return <div><h1>Hello World</h1></div>
+	return <div></div>
 }
 
 export default BigHello

@@ -27,7 +27,7 @@ by the list as the key.
 function TodoList({ list }) {
 	return (
 		<ul>
-			{list.map((item, i) => <li key={item}>{item}</li>)}
+			{/* Use map to turn the list into li tags! */}
 		</ul>
 	)
 }

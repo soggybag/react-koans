@@ -13,11 +13,7 @@ The content for each item can be anything you like.
 function PetList({ name }) {
 	return (
 		<ul>
-			<li>Dogs</li>
-			<li>Cats</li>
-			<li>Lizrds</li>
-			<li>Rats</li>
-			<li>Arachnids</li>
+			{/* List of items here */}
 		</ul>
 	)
 }
